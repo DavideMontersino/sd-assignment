@@ -31,6 +31,7 @@ In order of importance:
    Techniques to solve the problem can include a proxy capable of initiating session, i.e. with cookies or jwt
  * Ui is blocked for too long while loading.
    I needed to research how to make ember render only a few elements at once; By this I mean either pagination, or giving the layout engine just a few elements at once instead of all the 320 elements.
+ * Add visual clues when page is loading.
  * Write tests. I had no time to check ember's testing facilities.
  * The adapter (app/adapters/application.js) needs to be type-wise - now it would the same transformation to all the code if other api endpoints wuld be added.
  * Server side pagination. I would need to look a little bit more into Sysdig API.
