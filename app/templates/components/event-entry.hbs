@@ -1,0 +1,42 @@
+<div class="">
+  <div class="panel {{event-severity eventEntry.severity}} panel-event-entry">
+    <div class="panel-heading" title="severity: {{eventEntry.severity}} ">
+      <button type="button" class="btn btn-default btn-xs" {{action "toggleBody"}}>
+        <span class="glyphicon {{if isExpanded "glyphicon-minus" "glyphicon-plus"}}" title="{{if isExpanded "collapse" "expand"}}"></span>
+      </button>
+
+      {{eventEntry.name}}
+
+      <span class="pull-right">
+        {{format-date eventEntry.timestamp}}
+      </span>
+    </div>
+    <div class="panel-body" title="{{eventEntry.description}}">
+      filter: <kbd>{{eventEntry.filter}}</kbd>
+      {{#if isExpanded}}
+        <pre>
+          {{eventEntry.description}}
+      </pre>
+      {{else}}
+
+      {{/if}}
+    </div>
+    <div class="panel-footer">
+      <div class="row">
+        <div class="tags col-sm-6">
+          {{#each eventEntry.tags as | tag|}}
+          <span class="label label-default">{{tag.key}} : {{tag.value}}</span>
+          {{/each}}
+        </div>
+        <div class="tags col-sm-6">
+          <small>
+            <span class="pull-right">
+              <span>created: <span>{{format-date eventEntry.createdOn}}</span></span>
+              <span>modified: <span>{{format-date eventEntry.modifiedOn}}</span></span>
+            </span>
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

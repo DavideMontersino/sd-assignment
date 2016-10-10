@@ -1,0 +1,19 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>{{#link-to "index"}}About{{/link-to}}</li>
+        <li>{{#link-to "events"}}Event viewer{{/link-to}}</li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      {{outlet}}
+    </div>
+  </div>
+</div>
