@@ -43,7 +43,6 @@ export default DS.JSONSerializer.extend({
     });
     payload.data = events;
 
-    console.log(events);
     return payload;
   }
 });
