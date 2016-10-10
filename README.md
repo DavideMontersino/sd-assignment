@@ -18,6 +18,7 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
+* add the API key to the file app/adapters/application.js
 * `ember serve`
 * Visit the app at [http://localhost:4200](http://localhost:4200).
 
