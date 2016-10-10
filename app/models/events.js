@@ -6,5 +6,8 @@ export default DS.Model.extend({
   modifiedOn: DS.attr(),
   description: DS.attr(),
   tags: DS.attr(),
-  timestamp: DS.attr()
+  timestamp: DS.attr(),
+  severity: DS.attr(),
+  filter: DS.attr(),
+  createdOn: DS.attr()
 });
